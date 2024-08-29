@@ -20,5 +20,14 @@ class ConsoleApps
         Console.Write("A={0}",a);
         Console.Write("B={0}",b);
     }
+
+    // Using WriteLine method, write this output on screen: A=50
+    // B=25
+    public static void Question4()
+    {
+        int a=50,b=25;
+        Console.WriteLine("A={0}",a);
+        Console.WriteLine("B={0}",b);
+    }
     #endregion
 }
