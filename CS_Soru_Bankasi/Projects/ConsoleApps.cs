@@ -49,5 +49,14 @@ class ConsoleApps
         Console.WriteLine("Sayıların toplamı: {0}",total);
         Console.WriteLine("Sayıların ortalaması: {0}",average);
     }
+
+    // Using Read method, find the ASCII code of keyboard entry
+    public static void Question6()
+    {
+        int code;
+        Console.Write("Bir tuşa basınız: ");
+        code=Console.Read();
+        Console.WriteLine("Bastığınız tuşun ASCII karşılığı: {0}",code);
+    }
     #endregion
 }
