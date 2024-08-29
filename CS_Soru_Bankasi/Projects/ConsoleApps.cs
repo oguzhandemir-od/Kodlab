@@ -59,4 +59,15 @@ class ConsoleApps
         Console.WriteLine("Bastığınız tuşun ASCII karşılığı: {0}",code);
     }
     #endregion
+
+    #region BackgroundColor and ForegroundColor Methods
+    // Using BackgroundColor and ForegroundColor methods, write TÜRKİYE as black on white console screen
+    public static void Question7()
+    {
+        Console.BackgroundColor=ConsoleColor.White;
+        Console.ForegroundColor=ConsoleColor.Black;
+        Console.Clear();
+        Console.WriteLine("TÜRKİYE");
+    }
+    #endregion
 }
