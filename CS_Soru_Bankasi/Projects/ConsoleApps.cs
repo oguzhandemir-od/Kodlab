@@ -30,4 +30,24 @@ class ConsoleApps
         Console.WriteLine("B={0}",b);
     }
     #endregion
+
+    #region Read and ReadLine Methods
+    // Find the sum and average of the numbers entered by user
+    public static void Question5()
+    {
+        int number1, number2,number3,number4,total,average;
+        Console.Write("1. sayıyı giriniz: ");
+        number1=int.Parse(Console.ReadLine());
+        Console.Write("2. sayıyı giriniz: ");
+        number2=int.Parse(Console.ReadLine());
+        Console.Write("3. sayıyı giriniz: ");
+        number3=int.Parse(Console.ReadLine());
+        Console.Write("4. sayıyı giriniz: ");
+        number4=int.Parse(Console.ReadLine());
+        total=number1+number2+number3+number4;
+        average=total/4;
+        Console.WriteLine("Sayıların toplamı: {0}",total);
+        Console.WriteLine("Sayıların ortalaması: {0}",average);
+    }
+    #endregion
 }
