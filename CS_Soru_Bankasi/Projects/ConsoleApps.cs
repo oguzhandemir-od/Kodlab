@@ -70,4 +70,16 @@ class ConsoleApps
         Console.WriteLine("TÜRKİYE");
     }
     #endregion
+
+    #region ConsoleKeyInfo
+    // Using ConsoleKeyInfo method, find the key pushed on keyboard and write it on screen
+    public static void Question8()
+    {
+        ConsoleKeyInfo pushKey;
+        Console.Write("Bir tuşa basınız: ");
+        pushKey=Console.ReadKey();
+        Console.WriteLine();
+        Console.WriteLine("{0} tuşuna bastınız",pushKey.Key.ToString());
+    }
+    #endregion
 }
