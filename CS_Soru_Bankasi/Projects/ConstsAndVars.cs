@@ -73,4 +73,20 @@ class ConstsAndVars
         Ekim,Kasım,Aralık
     }
     #endregion
+
+    #region Learning Variable Types
+    // Write the codes finding the types of variables we use through GetType method
+    public static void Question5()
+    {
+        int integerVar=54786;
+        decimal decimalVar=123.45m;
+        string stringVar="Kitap";
+        bool booleanVar=true;
+
+        Console.WriteLine("{0} değerindeki değişkenin tipi: {1}",integerVar,integerVar.GetType());
+        Console.WriteLine("{0} değerindeki değişkenin tipi: {1}",decimalVar,decimalVar.GetType());
+        Console.WriteLine("{0} değerindeki değişkenin tipi: {1}",stringVar,stringVar.GetType());
+        Console.WriteLine("{0} değerindeki değişkenin tipi: {1}",booleanVar,booleanVar.GetType());
+    }
+    #endregion
 }
