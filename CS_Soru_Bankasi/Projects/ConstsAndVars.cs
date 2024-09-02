@@ -41,4 +41,15 @@ class ConstsAndVars
         Console.WriteLine("Float {0}",floatVar);
     }
     #endregion
+
+    #region Variable Types According To Places They Are Defined
+    // Write the codes finding the multiplication of global variable 'g' and local variable 'y'
+    public static int g=32;
+    public static void Question3()
+    {
+        int y=15;
+        int result=g*y;
+        Console.WriteLine("Genel ve yerel değişkenlerin çarpımı: {0}", result);
+    }
+    #endregion
 }
