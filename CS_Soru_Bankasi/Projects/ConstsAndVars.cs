@@ -52,4 +52,25 @@ class ConstsAndVars
         Console.WriteLine("Genel ve yerel değişkenlerin çarpımı: {0}", result);
     }
     #endregion
+
+    #region User-Defined Data Types - Creating Enums and Accessing the Elements in Enums
+
+    // After defining the month names in year as Enum, write the codes finding the name of the month 
+    // user enters as number
+    public static void Question4()
+    {
+        Console.Write("Ay için sayısal değer giriniz: ");
+        int month=int.Parse(Console.ReadLine());
+        Months monthName=(Months) month-1;
+        Console.WriteLine("{0} ayı yılın {1}. ayıdır.",monthName,month);
+    }
+
+    public enum Months
+    {
+        Ocak,Şubat,Mart,
+        Nisan,Mayıs,Haziran,
+        Temmuz,Ağustos,Eylül,
+        Ekim,Kasım,Aralık
+    }
+    #endregion
 }
