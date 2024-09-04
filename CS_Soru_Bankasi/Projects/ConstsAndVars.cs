@@ -89,4 +89,18 @@ class ConstsAndVars
         Console.WriteLine("{0} değerindeki değişkenin tipi: {1}",booleanVar,booleanVar.GetType());
     }
     #endregion
+
+    #region Converting Between Variable Types
+    // Write the codes finding the division of two integers entered by user
+    // The result must be decimal
+    public static void Question6()
+    {
+        Console.Write("Bir sayı giriniz: ");
+        int number1=int.Parse(Console.ReadLine());
+        Console.Write("Bir sayı giriniz: ");
+        int number2=int.Parse(Console.ReadLine());
+        double result=(double)number1/(double)number2;
+        Console.Write("{0} / {1} = {2}",number1,number2,result);
+    }
+    #endregion
 }
