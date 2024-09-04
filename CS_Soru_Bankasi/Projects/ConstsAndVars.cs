@@ -118,5 +118,21 @@ class ConstsAndVars
             Console.Write("Matematik dersine çalışmalısınız.");
         }
     }
+
+    // Write the codes finding the gender value according to the information entered by user
+    // (e for Men, k for Women)
+    public static void Question8()
+    {
+        Console.Write("Cinsiyet bilgisini giriniz (e / k): ");
+        char genderInfo=Convert.ToChar(Console.ReadLine());
+        if(genderInfo=='e')
+        {
+            Console.Write("Erkek bilgisi girildi");
+        }
+        if(genderInfo=='k')
+        {
+            Console.Write("Kadın bilgisi girildi");
+        }
+    }
     #endregion
 }
