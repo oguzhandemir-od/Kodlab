@@ -119,7 +119,7 @@ class ConstsAndVars
         }
     }
 
-    // Write the codes finding the gender value according to the information entered by user
+    // Write the codes finding the gender value according to the gender information entered by user
     // (e for Men, k for Women)
     public static void Question8()
     {
