@@ -102,5 +102,21 @@ class ConstsAndVars
         double result=(double)number1/(double)number2;
         Console.Write("{0} / {1} = {2}",number1,number2,result);
     }
+
+    // Write the codes asking if the equation (15 / 3 = 5) on screen is true or false
+    // According to user's answer evaulate their math sufficiency 
+    public static void Question7()
+    {
+        Console.Write("15 / 3 = 5 ifadesi doğru mu? (true/false): ");
+        bool input=Convert.ToBoolean(Console.ReadLine());
+        if(input)
+        {
+            Console.Write("Matematik bilginiz iyi.");
+        }
+        else
+        {
+            Console.Write("Matematik dersine çalışmalısınız.");
+        }
+    }
     #endregion
 }
