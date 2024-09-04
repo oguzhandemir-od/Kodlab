@@ -19,5 +19,20 @@ class Operators
         int mode=number1%number2;
         Console.WriteLine("{0} % {1} = {2} ",number1,number2,mode);
     }
+
+    // Write the codes computing the average of four numbers entered by user
+    public static void Question2()
+    {
+        Console.Write("1. sayıyı giriniz: ");
+        int number1=int.Parse(Console.ReadLine());
+        Console.Write("2. sayıyı giriniz: ");
+        int number2=int.Parse(Console.ReadLine());
+        Console.Write("3. sayıyı giriniz: ");
+        int number3=int.Parse(Console.ReadLine());
+        Console.Write("4. sayıyı giriniz: ");
+        int number4=int.Parse(Console.ReadLine());
+        double average=((double)(number1+number2+number3+number4)/4);
+        Console.Write("({0} + {1} + {2} + {3}) / 4 = {4}",number1,number2,number3,number4,average);
+    }
     #endregion 
 }
