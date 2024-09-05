@@ -34,5 +34,19 @@ class Operators
         double average=((double)(number1+number2+number3+number4)/4);
         Console.Write("({0} + {1} + {2} + {3}) / 4 = {4}",number1,number2,number3,number4,average);
     }
+
+    // Write the codes computing area and circumference of a triangle whose perpendicular edges entered by user
+    public static void Question3()
+    {
+        Console.Write("1. kısa kenarı giriniz: ");
+        int firstEdge=int.Parse(Console.ReadLine());
+        Console.Write("2. kısa kenarı giriniz: ");
+        int secondEdge=int.Parse(Console.ReadLine());
+        int areaTriangle=firstEdge*secondEdge/2;
+        double thirdEdge=Math.Sqrt(Math.Pow(firstEdge,2)+Math.Pow(secondEdge,2));
+        double circumferenceTriangle=(double)firstEdge+(double)secondEdge+thirdEdge;
+        Console.WriteLine($"Üçgenin Alanı: {areaTriangle}");
+        Console.WriteLine($"Üçgenin Çevresi: {circumferenceTriangle}");
+    }
     #endregion 
 }
