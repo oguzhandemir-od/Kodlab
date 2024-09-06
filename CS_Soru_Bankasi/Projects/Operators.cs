@@ -127,4 +127,18 @@ class Operators
         Console.WriteLine("f değeri: {0}", f);
     }
     #endregion 
+
+    #region Bitwise Operators
+    // Write the codes finding the bitwise results for two numbers using AND, OR, XOR logic operators
+    public static void Question8()
+    {
+        Console.Write("Bir sayı giriniz: ");
+        int number1=int.Parse(Console.ReadLine());
+        Console.Write("Bir sayı giriniz: ");
+        int number2=int.Parse(Console.ReadLine());
+        Console.WriteLine("AND: {0}",number1&number2);
+        Console.WriteLine("OR: {0}",number1|number2);
+        Console.WriteLine("XOR: {0}",number1^number2);
+    }
+    #endregion
 }
