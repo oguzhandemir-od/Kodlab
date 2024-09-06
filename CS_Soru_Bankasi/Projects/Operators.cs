@@ -102,5 +102,29 @@ class Operators
         number5%=number6;
         Console.WriteLine($"Girilen sayıların modu: {number5}");
     }
+
+    // Find the output of the code block below
+    public static void Question7()
+    {
+        int d, e, f;
+        d = 90;
+        e = 34;
+        d++;
+        ++d;
+        Console.WriteLine("d'nin başlangıç değeri: 90");
+        Console.WriteLine("d++ ve ++d işleminden sonra d'nin değeri: {0}", d);
+        e--;
+        --e;
+        Console.WriteLine("e'nin başlangıç değeri: 34");
+        Console.WriteLine("e-- ve --e işleminden sonra e'nin değeri: {0}", e);
+        f = ++d - e;
+        Console.WriteLine("f = ++d - e işleminden sonra");
+        Console.WriteLine("d değeri: {0}", d);
+        Console.WriteLine("f değeri: {0}", f);
+        f = d++ - e;
+        Console.WriteLine("f = d++ - e işleminden sonra");
+        Console.WriteLine("d değeri: {0}", d);
+        Console.WriteLine("f değeri: {0}", f);
+    }
     #endregion 
 }
