@@ -140,5 +140,17 @@ class Operators
         Console.WriteLine("OR: {0}",number1|number2);
         Console.WriteLine("XOR: {0}",number1^number2);
     }
+
+    // Write the codes finding results obtained by using the right 3 and left 4 bit shift operators for the sum of two numbers
+    public static void Question9()
+    {
+        Console.Write("Bir sayı giriniz: ");
+        int number1=int.Parse(Console.ReadLine());
+        Console.Write("Bir sayı giriniz: ");
+        int number2=int.Parse(Console.ReadLine());
+        int sum=number1+number2;
+        Console.WriteLine("Sağa 3 bit kaydırılınca toplam değeri: {0}",(sum>>3));
+        Console.WriteLine("Sola 4 bit kaydırılınca toplam değeri: {0}",(sum<<4));
+    }
     #endregion
 }
