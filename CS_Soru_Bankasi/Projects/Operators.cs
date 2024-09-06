@@ -59,5 +59,20 @@ class Operators
         Console.WriteLine($"Çemberin Çevresi: {circleCircumference:F2}");
         Console.WriteLine($"Çemberin Alanı: {circleArea:F2}");
     }
+
+    // Write the codes computing the amount of Dollars and Euros based on their exchange rates and TL amount entered by user
+    public static void Question5()
+    {
+        Console.Write("TL cinsinden para miktarı giriniz: ");
+        double moneyAmountTL=double.Parse(Console.ReadLine());
+        Console.Write("Euro kurunu giriniz: ");
+        double rateEuro=double.Parse(Console.ReadLine());
+        Console.Write("Dolar kurunu giriniz: ");
+        double rateDollar=double.Parse(Console.ReadLine());
+        double moneyAmountEuro=moneyAmountTL/rateEuro;
+        double moneyAmountDollar=moneyAmountTL/rateDollar;
+        Console.WriteLine($"{moneyAmountTL} TL = {moneyAmountEuro:F2} Euro");
+        Console.WriteLine($"{moneyAmountTL} TL = {moneyAmountDollar:F2} Dolar");
+    }
     #endregion 
 }
