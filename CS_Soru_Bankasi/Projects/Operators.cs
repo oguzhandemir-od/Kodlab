@@ -74,5 +74,33 @@ class Operators
         Console.WriteLine($"{moneyAmountTL} TL = {moneyAmountEuro:F2} Euro");
         Console.WriteLine($"{moneyAmountTL} TL = {moneyAmountDollar:F2} Dolar");
     }
+    #endregion
+
+    #region Transfer Operators
+    // Write the codes computing the sum, the multiplication and the mode of the numbers entered by user using abbraviated 
+    // transfer operators
+    public static void Question6()
+    {
+        Console.Write("Bir sayı giriniz: ");
+        int number1=int.Parse(Console.ReadLine());
+        Console.Write("Bir sayı giriniz: ");
+        int number2=int.Parse(Console.ReadLine());
+        number2+=number1;
+        Console.WriteLine($"Girilen sayıların toplamı: {number2}");
+
+        Console.Write("Bir sayı giriniz: ");
+        int number3=int.Parse(Console.ReadLine());
+        Console.Write("Bir sayı giriniz: ");
+        int number4=int.Parse(Console.ReadLine());
+        number4*=number3;
+        Console.WriteLine($"Girilen sayıların çarpımı: {number4}");
+
+        Console.Write("Bir sayı giriniz: ");
+        int number5=int.Parse(Console.ReadLine());
+        Console.Write("Bir sayı giriniz: ");
+        int number6=int.Parse(Console.ReadLine());
+        number5%=number6;
+        Console.WriteLine($"Girilen sayıların modu: {number5}");
+    }
     #endregion 
 }
