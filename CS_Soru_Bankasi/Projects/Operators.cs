@@ -48,5 +48,16 @@ class Operators
         Console.WriteLine($"Üçgenin Alanı: {areaTriangle}");
         Console.WriteLine($"Üçgenin Çevresi: {circumferenceTriangle}");
     }
+
+    // Write the codes computing area and circumference of a circle whose radius entered by user
+    public static void Question4()
+    {
+        Console.Write("Çemberin yarıçapını giriniz: ");
+        double radius=double.Parse(Console.ReadLine());
+        double circleCircumference=2*Math.PI*radius;
+        double circleArea=Math.PI*radius*radius;
+        Console.WriteLine($"Çemberin Çevresi: {circleCircumference:F2}");
+        Console.WriteLine($"Çemberin Alanı: {circleArea:F2}");
+    }
     #endregion 
 }
