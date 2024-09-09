@@ -1,6 +1,7 @@
 class ControlStructes
 {
     #region If Structure
+    // Write the codes finding if the entered number is 10 or less than 10 or greater than 10 using if command
     public static void Question1()
     {
         Console.Write("Bir sayı giriniz: ");
