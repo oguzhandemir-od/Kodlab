@@ -61,5 +61,20 @@ class ControlStructes
         }
         Console.WriteLine($"Girilen en küçük sayı: {minNumber}");
     }
+
+    // Write the codes finding whether the pressed key is lower case or UPPER CASE with if-else commands
+    public static void Question4()
+    {
+        Console.Write("Bir harf tuşuna basınız: ");
+        char letter=Convert.ToChar(Console.ReadLine());
+        if(letter>='a'&&letter<='z')
+        {
+            Console.WriteLine("küçük harf");
+        }
+        else
+        {
+            Console.WriteLine("BÜYÜK HARF");
+        }
+    }
     #endregion
 }
