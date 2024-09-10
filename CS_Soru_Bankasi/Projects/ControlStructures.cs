@@ -40,5 +40,26 @@ class ControlStructes
             Console.WriteLine("Özel karaktere basıldı.");
         }
     }
+
+    // Write the codes finding the minimum number between the three numbers entered by user, using if command
+    public static void Question3()
+    {
+        int minNumber,newNumber;
+        Console.Write("Bir sayı giriniz: ");
+        minNumber=int.Parse(Console.ReadLine());
+        Console.Write("Bir sayı giriniz: ");
+        newNumber=int.Parse(Console.ReadLine());
+        if(newNumber<minNumber)
+        {
+            minNumber=newNumber;
+        }
+        Console.Write("Bir sayı giriniz: ");
+        newNumber=int.Parse(Console.ReadLine());
+        if(newNumber<minNumber)
+        {
+            minNumber=newNumber;
+        }
+        Console.WriteLine($"Girilen en küçük sayı: {minNumber}");
+    }
     #endregion
 }
