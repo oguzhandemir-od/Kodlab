@@ -121,5 +121,40 @@ class ControlStructes
             Console.WriteLine("Reel kök yoktur");
         }
     }
+
+    // Write the program codes approving the applications of the applicants who are men, done the military service
+    // And equal or less than 30, after receive the gender, military service and age information,
+    // Using if-else command
+    public static void Question7()
+    {
+        Console.WriteLine("Başvuran kişinin cinsiyeti");
+        Console.Write("Erkek için (e), bayan için (b): ");
+        char applicantGender=Convert.ToChar(Console.ReadLine());
+        if(applicantGender=='b')
+        {
+            Console.WriteLine("Yalnızca erkek personel işe alınacaktır.");
+        }
+        else if(applicantGender=='e')
+        {
+            Console.WriteLine("Askerlik durumunu giriniz");
+            Console.Write("Yapıldı ise (e), yapılmadı ise (h): ");
+            char serviceDone=Convert.ToChar(Console.ReadLine());
+            if(serviceDone=='h')
+            {
+                Console.WriteLine("Askerliğini yapmış personel işe alınacaktır.");
+            }
+            else if(serviceDone=='e')
+            {
+                Console.Write("Yaşınız: ");
+                int age=int.Parse(Console.ReadLine());
+                if(age<=30)
+                {
+                    Console.WriteLine("İşe alındınız");
+                }
+                else
+                    Console.WriteLine("Yaşınız 30 veya daha küçük olmalıdır.");
+            }
+        }
+    }
     #endregion
 }
