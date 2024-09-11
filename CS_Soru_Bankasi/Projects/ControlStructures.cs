@@ -91,5 +91,35 @@ class ControlStructes
             Console.WriteLine("Girilen sayı tektir.");
         }
     }
+
+    // Write the codes computing the roots of a quadratic equation using if-else command
+    public static void Question6()
+    {
+        Console.WriteLine("ax2 + bx + c denklemi için,");
+        Console.Write("a katsayısını giriniz: ");
+        int aFactor=int.Parse(Console.ReadLine());
+        Console.Write("b katsayısını giriniz: ");
+        int bFactor=int.Parse(Console.ReadLine());
+        Console.Write("c sayısını giriniz: ");
+        int cFactor=int.Parse(Console.ReadLine());
+
+        double delta=(bFactor*bFactor)-(4*aFactor*cFactor);
+        if(delta>0)
+        {
+            double rootOne=(-bFactor+Math.Sqrt(delta))/(2*aFactor);
+            double rootTwo=(-bFactor-Math.Sqrt(delta))/(2*aFactor);
+            Console.WriteLine($"1. Kök: {rootOne}");
+            Console.WriteLine($"2. Kök: {rootTwo}");
+        }
+        else if(delta==0)
+        {
+            double rootOnly=-bFactor/(2*aFactor);
+            Console.WriteLine($"Tek Kök: {rootOnly}");
+        }
+        else
+        {
+            Console.WriteLine("Reel kök yoktur");
+        }
+    }
     #endregion
 }
