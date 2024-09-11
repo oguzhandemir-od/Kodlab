@@ -76,5 +76,20 @@ class ControlStructes
             Console.WriteLine("BÜYÜK HARF");
         }
     }
+
+    // Write the codes finding whether the number entered is odd or even, using if command
+    public static void Question5()
+    {
+        Console.Write("Bir sayı giriniz: ");
+        int number=int.Parse(Console.ReadLine());
+        if((number%2)==0)
+        {
+            Console.WriteLine("Girilen sayı çifttir.");
+        }
+        else
+        {
+            Console.WriteLine("Girilen sayı tektir.");
+        }
+    }
     #endregion
 }
