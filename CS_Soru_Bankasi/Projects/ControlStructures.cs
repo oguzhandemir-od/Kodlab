@@ -157,4 +157,14 @@ class ControlStructes
         }
     }
     #endregion
+
+    #region Ternary Operator
+    // Write the codes controlling whether the number entered by user is less than 10, using ternary operator
+    public static void Question8()
+    {
+        Console.Write("Lütfen 10'dan küçük bir sayı giriniz: ");
+        int number=int.Parse(Console.ReadLine());
+        Console.WriteLine(number<10?"Sayı girişi kabul edildi":"Sayı girişi kabul edilmedi");
+    }
+    #endregion
 }
