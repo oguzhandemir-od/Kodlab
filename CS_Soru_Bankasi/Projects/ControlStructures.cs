@@ -167,4 +167,37 @@ class ControlStructes
         Console.WriteLine(number<10?"Sayı girişi kabul edildi":"Sayı girişi kabul edilmedi");
     }
     #endregion
+
+    #region Switch-Case
+    // Write the program "I love you" on screen in the selected language using switch-case method
+    public static void Question9()
+    {
+        Console.WriteLine("DİLLER");
+        Console.WriteLine("1- Türkçe");
+        Console.WriteLine("2- English");
+        Console.WriteLine("3- Deutschland");
+        Console.WriteLine("4- la France");
+        Console.Write("Seçiminiz: ");
+        string selection=Console.ReadLine();
+
+        switch (selection)
+        {
+            case "1":
+            Console.WriteLine("Seni seviyorum");
+            break;
+            case "2":
+            Console.WriteLine("I love you");
+            break;
+            case "3":
+            Console.WriteLine("Ich liebe dich");
+            break;
+            case "4":
+            Console.WriteLine("Je t'aime");
+            break;
+            default:
+            Console.WriteLine("Geçersiz giriş");
+            break;
+        }
+    }
+    #endregion
 }
