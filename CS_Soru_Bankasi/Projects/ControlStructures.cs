@@ -199,5 +199,39 @@ class ControlStructes
             break;
         }
     }
+
+    // Write the codes finding the season based on the month name entered by user, using switch-case method
+    public static void Question10()
+    {
+        Console.Write("Bulunduğunuz ay ismini yazınız: ");
+        string month = Console.ReadLine().ToLower();
+
+        switch (month)
+        {
+            case "aralık":
+            case "ocak":
+            case "şubat":
+                Console.WriteLine("Kış Mevsimi");
+                break;
+            case "mart":
+            case "nisan":
+            case "mayıs":
+                Console.WriteLine("İlkbahar Mevsimi");
+                break;
+            case "haziran":
+            case "temmuz":
+            case "ağustos":
+                Console.WriteLine("Yaz Mevsimi");
+                break;
+            case "eylül":
+            case "ekim":
+            case "kasım":
+                Console.WriteLine("Sonbahar Mevsimi");
+                break;
+            default:
+                Console.WriteLine("Geçersiz giriş");
+                break;
+        }
+    }
     #endregion
 }
