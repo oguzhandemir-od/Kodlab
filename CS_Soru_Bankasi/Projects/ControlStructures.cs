@@ -233,5 +233,38 @@ class ControlStructes
                 break;
         }
     }
+
+    // Write the codes calculating of the result after entering two numbers and one of simple four operations (+ - * /)
+    // Use switch-case method
+    public static void Question11()
+    {
+        Console.Write("Sayıları ve işlemi giriniz: (3 4 *): ");
+        int number1=int.Parse(Console.ReadLine());
+        int number2=int.Parse(Console.ReadLine());
+        char operation=Convert.ToChar(Console.ReadLine());
+        int result;
+        switch (operation)
+        {
+            case '+':
+            result=number1+number2;
+            Console.WriteLine($"{number1} {operation} {number2} = {result}");
+            break;
+            case '-':
+            result=number1-number2;
+            Console.WriteLine($"{number1} {operation} {number2} = {result}");
+            break;
+            case '*':
+            result=number1*number2;
+            Console.WriteLine($"{number1} {operation} {number2} = {result}");
+            break;
+            case '/':
+            result=number1/number2;
+            Console.WriteLine($"{number1} {operation} {number2} = {result}");
+            break;
+            default:
+            Console.WriteLine("Geçersiz işlem!");
+            break;            
+        }
+    }
     #endregion
 }
