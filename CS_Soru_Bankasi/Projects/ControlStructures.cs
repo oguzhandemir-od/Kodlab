@@ -438,5 +438,18 @@ class ControlStructes
             Console.WriteLine($"{i}. sayı: {number}");
         }
     }
+
+    // Write the codes generating 7 digits password through the characters inside an array
+    // Use for command
+    public static void Question19()
+    {
+        Random rnd = new Random();
+        char[] keys = { 'A', 'B', 'C', 'k', 'o', 'n', 'v', '#', 'a', 'b', 'c', '6', '7', '8', '&', '?', '.', '!' };
+        for (int i = 1; i <= 7; i++)
+        {
+            int key = rnd.Next(0, 18);
+            Console.Write(keys[key] + " ");
+        }
+    }
     #endregion
 }
