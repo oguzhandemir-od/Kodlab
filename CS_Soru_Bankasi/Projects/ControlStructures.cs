@@ -364,5 +364,21 @@ class ControlStructes
             Console.WriteLine($"{i} Kodlab");
         }
     }
+
+    // Write the codes calculating the total of even numbers and the total of odd numbers between 0-20, using for command
+    public static void Question14()
+    {
+        int evenTotal=0;
+        int oddTotal=0;
+        for(int i=0;i<=20;i++)
+        {
+            if(i%2==0)
+                evenTotal+=i;
+            else
+                oddTotal+=i;
+        }
+        Console.WriteLine($"Çift sayıların toplamı: {evenTotal}");
+        Console.WriteLine($"Tek sayıların toplamı: {oddTotal}");
+    }
     #endregion
 }
