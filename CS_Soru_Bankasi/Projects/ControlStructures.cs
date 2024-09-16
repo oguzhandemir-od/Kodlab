@@ -408,5 +408,21 @@ class ControlStructes
             Console.WriteLine($"{i}. sayı: {number}");
         }
     }
+
+    // Write the codes that types the even numbers between two numbers entered by user
+    // Use continue command and for loop
+    public static void Question17()
+    {
+        Console.Write("Bir sayı giriniz: ");
+        int number1=int.Parse(Console.ReadLine());
+        Console.Write("Bir sayı giriniz: ");
+        int number2=int.Parse(Console.ReadLine());
+        for(int i=number1;i<=number2;i++)
+        {
+            if(i%2!=0)
+                continue;
+            Console.WriteLine(i);
+        }
+    }
     #endregion
 }
