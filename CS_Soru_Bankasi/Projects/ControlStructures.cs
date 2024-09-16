@@ -397,7 +397,7 @@ class ControlStructes
         Console.WriteLine($"Sayıların ortalaması: {average}");
     }
 
-    // Write the codes generating random numbers between 1-100 and typing them on screen
+    // Write the codes generating random numbers between 1-100 and typing them on screen, using for command
     public static void Question16()
     {
         int number;
