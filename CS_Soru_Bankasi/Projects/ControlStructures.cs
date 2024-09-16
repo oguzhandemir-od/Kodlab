@@ -266,5 +266,92 @@ class ControlStructes
             break;            
         }
     }
+
+    // Write the codes finding the day based on the date entered by user in day/month/year format using switch-case method
+    public static void Question12()
+    {
+        Console.WriteLine("Gün/Ay/Yıl olarak tarih değerini giriniz (24/10/1976): ");
+        Console.Write("Gün: ");
+        int day = int.Parse(Console.ReadLine());
+        Console.Write("Ay: ");
+        int month = int.Parse(Console.ReadLine());
+        Console.Write("Yıl: ");
+        int year = int.Parse(Console.ReadLine());
+        int monthDays = 0;
+        int totalDays = 0;
+        string dayName = "Pazar";
+
+        switch (month)
+        {
+            case 1:
+                monthDays = 0;
+                break;
+            case 2:
+                monthDays = 31;
+                break;
+            case 3:
+                monthDays = 59;
+                break;
+            case 4:
+                monthDays = 90;
+                break;
+            case 5:
+                monthDays = 120;
+                break;
+            case 6:
+                monthDays = 151;
+                break;
+            case 7:
+                monthDays = 181;
+                break;
+            case 8:
+                monthDays = 212;
+                break;
+            case 9:
+                monthDays = 243;
+                break;
+            case 10:
+                monthDays = 273;
+                break;
+            case 11:
+                monthDays = 304;
+                break;
+            case 12:
+                monthDays = 334;
+                break;
+        }
+
+        
+        totalDays = (year - 1) * 365 + year / 4 + monthDays + day;
+        int mode = totalDays % 7;
+
+        switch (mode)
+        {
+            
+            case 0:
+                dayName = "Pazartesi";
+                break;
+            case 1:
+                dayName = "Salı";
+                break;
+            case 2:
+                dayName = "Çarşamba";
+                break;
+            case 3:
+                dayName = "Perşembe";
+                break;
+            case 4:
+                dayName = "Cuma";
+                break;
+            case 5:
+                dayName = "Cumartesi";
+                break;
+                case 6:
+                dayName = "Pazar";
+                break;
+        }
+
+        Console.WriteLine($"{day}/{month}/{year} tarihi {dayName} günüdür");
+    }
     #endregion
 }
