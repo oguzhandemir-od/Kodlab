@@ -424,5 +424,19 @@ class ControlStructes
             Console.WriteLine(i);
         }
     }
+
+    // Write the codes generating random decimal numbers between 10-20 and typing on screen
+    // Use for command
+    public static void Question18()
+    {
+         Random rnd=new Random();
+        double number;
+        for(int i=1;i<=10;i++)
+        {
+            number = rnd.Next(1000,2001);
+            number/=100;
+            Console.WriteLine($"{i}. sayı: {number}");
+        }
+    }
     #endregion
 }
