@@ -380,5 +380,21 @@ class ControlStructes
         Console.WriteLine($"Çift sayıların toplamı: {evenTotal}");
         Console.WriteLine($"Tek sayıların toplamı: {oddTotal}");
     }
+
+    // Write the codes calculating the total and average of the 16 numbers entered by user, using for command
+    public static void Question15()
+    {
+        int total=0;
+        int average=0;
+        for(int i=1;i<=16;i++)
+        {
+            Console.Write($"{i}. sayıyı giriniz: ");
+            int number=int.Parse(Console.ReadLine());
+            total+=number;
+        }
+        average=total/16;
+        Console.WriteLine($"Sayıların toplamı: {total}");
+        Console.WriteLine($"Sayıların ortalaması: {average}");
+    }
     #endregion
 }
