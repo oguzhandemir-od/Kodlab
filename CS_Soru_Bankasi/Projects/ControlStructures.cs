@@ -354,4 +354,15 @@ class ControlStructes
         Console.WriteLine($"{day}/{month}/{year} tarihi {dayName} günüdür");
     }
     #endregion
+
+    #region Loops - For Loop
+    // Write the codes that type "Kodlab" on screen for 10 times using for command
+    public static void Question13()
+    {
+        for(int i=0;i<10;i++)
+        {
+            Console.WriteLine($"{i} Kodlab");
+        }
+    }
+    #endregion
 }
