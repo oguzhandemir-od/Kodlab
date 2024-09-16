@@ -396,5 +396,17 @@ class ControlStructes
         Console.WriteLine($"Sayıların toplamı: {total}");
         Console.WriteLine($"Sayıların ortalaması: {average}");
     }
+
+    // Write the codes generating random numbers between 1-100 and typing them on screen
+    public static void Question16()
+    {
+        int number;
+        for(int i=1;i<=10;i++)
+        {
+            Random rnd=new Random();
+            number = rnd.Next(1,101);
+            Console.WriteLine($"{i}. sayı: {number}");
+        }
+    }
     #endregion
 }
