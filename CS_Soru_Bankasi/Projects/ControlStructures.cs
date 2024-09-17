@@ -451,5 +451,27 @@ class ControlStructes
             Console.Write(keys[key] + " ");
         }
     }
+
+    // Write the codes that types the result of 5 matches played between Fenerbahçe and Galatasaray on screen
+    // Use for command
+    public static void Question20()
+    {
+        int scoreFenerbahce,scoreGalatasaray,totalFenerbahce=0,totalGalatasaray=0;
+        Random rnd=new Random();
+        for(int i=1;i<=5;i++)
+        {
+            scoreFenerbahce=rnd.Next(0,6);
+            scoreGalatasaray=rnd.Next(0,6);
+            if(scoreFenerbahce>scoreGalatasaray)
+                totalFenerbahce++;
+            else if(scoreFenerbahce<scoreGalatasaray)
+                totalGalatasaray++;
+            Console.WriteLine($"Fenerbahçe: {scoreFenerbahce} - Galatasaray: {scoreGalatasaray}");
+        }
+        if(totalFenerbahce>totalGalatasaray)
+            Console.WriteLine($"Kazanan takım {totalFenerbahce} maç ile Fenerbahçe");
+        else
+            Console.WriteLine($"Kazanan takım {totalGalatasaray} maç ile Galatasaray");
+    }
     #endregion
 }
