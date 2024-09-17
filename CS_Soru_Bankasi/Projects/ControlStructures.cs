@@ -526,5 +526,26 @@ class ControlStructes
         Console.WriteLine($"Sayıların toplamı: {total}");
         Console.WriteLine($"Sayıların ortalaması: {average:F2}");
     }
+
+    // Write the codes converting a decimal entered by user to a binary, using for command
+    public static void Question23()
+    {
+        Console.Write("10 tabanında bir sayı giriniz: ");
+        int number=int.Parse(Console.ReadLine());
+        int division=number;
+        string binaryNumber="";
+
+        for(;;)
+        {
+            binaryNumber=(division%2).ToString()+binaryNumber;
+            division=division/2;
+            if(division<2)
+            {
+                binaryNumber=division.ToString()+binaryNumber;
+                break;
+            }  
+        }
+        Console.WriteLine($"Sayının 2 tabanında karşılığı: {binaryNumber}");
+    }
     #endregion
 }
