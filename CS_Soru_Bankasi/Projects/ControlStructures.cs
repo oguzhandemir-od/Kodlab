@@ -473,5 +473,38 @@ class ControlStructes
         else
             Console.WriteLine($"Kazanan takım {totalGalatasaray} maç ile Galatasaray");
     }
+
+    // Write the codes for finding game of a random number computer keeps between 1-100
+    // Use for command
+    public static void Question21()
+    {
+        Random rnd = new Random();
+        int theNumber = rnd.Next(1, 101);
+        int input = 0;
+        for (int i = 1; i <= 5; i++)
+        {
+            Console.Write("Bir sayı giriniz: ");
+            input = int.Parse(Console.ReadLine());
+            if (input > theNumber)
+            {
+                if (i == 5)
+                    break;
+                Console.WriteLine("Sayıyı KÜÇÜLT");
+            }
+            if (input < theNumber)
+            {
+                if (i == 5)
+                    break;
+                Console.WriteLine("Sayıyı BÜYÜT");
+            }
+            if (input == theNumber)
+            {
+                Console.WriteLine($"{i}. hakkınızda buldunuz");
+                break;
+            }
+        }
+        if (input != theNumber)
+            Console.WriteLine("Bulamadınız");
+    }
     #endregion
 }
