@@ -506,5 +506,25 @@ class ControlStructes
         if (input != theNumber)
             Console.WriteLine("Bulamadınız");
     }
+
+    // Write the codes calculating the sum and average of the numbers input until zero (0) entered
+    // Use for command
+    public static void Question22()
+    {
+        int loop=0;
+        double number,total=0,average;
+        for(;;)
+        {
+            Console.Write("Sayı giriniz: ");
+            number=double.Parse(Console.ReadLine());
+            if(number==0)
+                break;
+            total+=number;
+            loop++;
+        }
+        average=total/loop;
+        Console.WriteLine($"Sayıların toplamı: {total}");
+        Console.WriteLine($"Sayıların ortalaması: {average:F2}");
+    }
     #endregion
 }
