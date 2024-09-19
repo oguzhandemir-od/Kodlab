@@ -570,4 +570,17 @@ class ControlStructes
         Console.WriteLine($"Notların Ortalaması: {average}");
     }
     #endregion
+
+    #region Loops - While Loop
+    // Write the codes that type the table of multiplication for 7, using while command
+    public static void Question25()
+    {
+        int factor=1;
+        while(factor<11)
+        {
+            Console.WriteLine($"7 x {factor} = {7*factor}");
+            factor++;
+        }
+    }
+    #endregion
 }
