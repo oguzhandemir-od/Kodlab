@@ -582,5 +582,19 @@ class ControlStructes
             factor++;
         }
     }
+
+    // Write the codes that type the entered number and its square until zero (0) is entered
+    // Use while command
+    public static void Question26()
+    {
+        while(true)
+        {
+            Console.Write("Bir sayı giriniz: ");
+            int number=int.Parse(Console.ReadLine());
+            if(number==0)
+                break;
+            Console.WriteLine($"Sayı: {number} Karesi: {number*number}");
+        }
+    }
     #endregion
 }
