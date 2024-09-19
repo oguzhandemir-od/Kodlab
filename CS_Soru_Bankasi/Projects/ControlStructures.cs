@@ -546,6 +546,28 @@ class ControlStructes
             }  
         }
         Console.WriteLine($"Sayının 2 tabanında karşılığı: {binaryNumber}");
+    }    
+    #endregion
+
+    #region Loops - Foreach Loop
+    // Write the codes calculating the sum and average of the grades students receive in the programming fundementals course,
+    // In a class of 10 students
+    // Use foreach command
+    public static void Question24()
+    {
+        int[] scores={65,32,98,100,24,34,52,100,38,69};
+        int totalScore=0;
+        int average;
+        int loop=0;
+        foreach(int s in scores)
+        {
+            totalScore+=s;
+            loop++;
+        }
+        average=totalScore/loop;
+        
+        Console.WriteLine($"Notların Toplamı: {totalScore}");
+        Console.WriteLine($"Notların Ortalaması: {average}");
     }
     #endregion
 }
