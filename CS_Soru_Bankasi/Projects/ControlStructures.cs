@@ -596,5 +596,18 @@ class ControlStructes
             Console.WriteLine($"Sayı: {number} Karesi: {number*number}");
         }
     }
+
+    // Write the codes calculating the sum of numbers between 1-100
+    // Use while command
+    public static void Question27()
+    {
+        int number=1,total=0;
+        while(number<=100)
+        {
+            total+=number;
+            number++;
+        }        
+        Console.WriteLine($"1-100 arasındaki sayıların toplamı: {total}");
+    }
     #endregion
 }
