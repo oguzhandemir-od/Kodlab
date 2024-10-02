@@ -633,5 +633,31 @@ class ControlStructes
         }
         Console.WriteLine($"Sayıların Toplamı: {total}");
     }
+
+    // Write the codes calculating the factorial of the entered number on keyboard
+    // Use while command
+    public static void Question29()
+    {
+        Console.Write("Bir sayı giriniz: ");
+        int number = int.Parse(Console.ReadLine());
+        int factorial = 1;
+
+        if (number < 0)
+        {
+            Console.WriteLine("Negatif sayıların faktöriyeli olmaz.");
+        }
+        else if (number == 0)
+            Console.WriteLine("0 sayısının faktöriyeli = 1");
+        else
+        {
+            int decreasedNumber=number;
+            while (decreasedNumber > 0)
+            {
+                factorial *= decreasedNumber;
+                decreasedNumber--;
+            }
+            Console.WriteLine($"{number} sayısının faktöriyeli = {factorial}");
+        }
+    }
     #endregion
 }
