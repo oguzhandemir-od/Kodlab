@@ -609,5 +609,29 @@ class ControlStructes
         }        
         Console.WriteLine($"1-100 arasındaki sayıların toplamı: {total}");
     }
+
+    // Write the codes calculating the sum of number between two numbers entered on keyboard
+    // Use while command
+    public static void Question28()
+    {
+        Console.Write("1. sayıyı giriniz: ");
+        int number1=int.Parse(Console.ReadLine());
+        Console.Write("2. sayıyı giriniz: ");
+        int number2=int.Parse(Console.ReadLine());
+        int total=number1;
+
+        if(number1==number2)
+            total=0;
+        
+        while(number1!=number2)
+        {
+            if(number1<number2)
+                number1++;
+            else if(number1>number2)
+                number1--;
+            total+=number1;
+        }
+        Console.WriteLine($"Sayıların Toplamı: {total}");
+    }
     #endregion
 }
