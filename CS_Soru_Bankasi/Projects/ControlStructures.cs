@@ -659,5 +659,28 @@ class ControlStructes
             Console.WriteLine($"{number} sayısının faktöriyeli = {factorial}");
         }
     }
+
+    // Write the codes calculation the multiplication of two numbers entered on keyboard 
+    // using only summing and subtraction operations
+    // Use while command
+    public static void Question30()
+    {
+        Console.Write("Bir sayı giriniz: ");
+        int number1=int.Parse(Console.ReadLine());
+        Console.Write("Bir sayı giriniz: ");
+        int number2=int.Parse(Console.ReadLine());
+
+        int result=0;
+
+        while(number2!=0)
+        {
+            result+=number1;
+            number2--;
+        }
+        if(number2<0)
+            result=-result;
+        
+        Console.WriteLine($"Sayıların çarpımı = {result}");
+    }
     #endregion
 }
