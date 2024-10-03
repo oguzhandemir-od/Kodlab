@@ -683,4 +683,21 @@ class ControlStructes
         Console.WriteLine($"Sayıların çarpımı = {result}");
     }
     #endregion
+
+    #region Loops - Do While Loop
+    // Write the codes that types the number itself, square of it and cube of it between the numbers 1-10
+    // Use do-while command
+    public static void Question31()
+    {
+        Console.WriteLine("Sayı     Karesi  Küpü");
+        Console.WriteLine("-----------------");
+        int number=0;
+        
+        do
+        {
+            number++;
+            Console.WriteLine($"{number}    {number*number}     {number*number*number}");
+        } while (number<10);
+    }
+    #endregion
 }
