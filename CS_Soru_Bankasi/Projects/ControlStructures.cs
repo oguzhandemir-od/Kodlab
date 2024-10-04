@@ -699,5 +699,31 @@ class ControlStructes
             Console.WriteLine($"{number}    {number*number}     {number*number*number}");
         } while (number<10);
     }
+
+    // Write the codes calculating the sinus, cosinus, tangent and cotangent of the angle entered on keyboard
+    // Use do-while command
+    public static void Question32()
+    {
+        char answer;
+        do
+        {
+            Console.Write("Açı değerini giriniz: ");
+        double angle=double.Parse(Console.ReadLine());
+        double angleRadian=angle*Math.PI/180;
+
+        double angleSin=Math.Sin(angleRadian);
+        double angleCos=Math.Cos(angleRadian);
+        double angleTan=Math.Tan(angleRadian);
+        double angleCot=angleCos/angleTan;
+
+        Console.WriteLine($"{angle} açısının sinüsü: {angleSin:F2}");
+        Console.WriteLine($"{angle} açısının kosinüsü: {angleCos:F2}");
+        Console.WriteLine($"{angle} açısının tanjantı: {angleTan:F2}");
+        Console.WriteLine($"{angle} açısının kotanjantı: {angleCot:F2}");
+
+        Console.Write("Devam edecek misiniz? (e/h): ");
+        answer=char.Parse(Console.ReadLine());
+        } while (answer=='e' || answer=='E');
+    }
     #endregion
 }
