@@ -725,5 +725,19 @@ class ControlStructes
         answer=char.Parse(Console.ReadLine());
         } while (answer=='e' || answer=='E');
     }
+
+    // Write the codes calculating the logarithms of the numbers between 1-10
+    // Use do-while command
+    public static void Question33()
+    {
+        int number = 0;
+        do
+        {
+            number++;
+            double numberLog=Math.Log10(number);
+            Console.WriteLine($"{number} 10 tabanında logaritması: {numberLog:F2}");
+
+        } while (number < 10);
+    }
     #endregion
 }
