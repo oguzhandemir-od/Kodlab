@@ -776,5 +776,38 @@ class ControlStructes
 
         Console.WriteLine($"Girilen en büyük sayı {maxNumber}");
     }
+
+    // Write the codes calculating the result of 1-2+3-4+5-6...n expression according to n value
+    // Use do-while command
+    public static void Question36()
+    {
+        int number = 0;
+        Console.Write("Bir sayı değeri giriniz: ");
+        int n = int.Parse(Console.ReadLine());
+        int total = 0;
+        string equation = "";
+        do
+        {
+            number++;
+            if (number % 2 == 0)
+            {
+                total += -number;
+                equation = equation + "-" + number.ToString();
+            }
+            else if(number==1)
+            {
+                equation=equation+number.ToString();
+                total +=1;
+            }
+            else
+            {
+                total += number;
+                equation = equation + "+" + number.ToString();
+            }
+
+        } while (number < n);
+
+        Console.WriteLine($"{equation} = {total}");
+    }
     #endregion
 }
