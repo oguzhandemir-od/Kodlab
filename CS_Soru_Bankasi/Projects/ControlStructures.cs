@@ -758,5 +758,23 @@ class ControlStructes
 
         Console.WriteLine($"{counter} tane 3 basamaklı sayı vardır.");
     }
+
+    // Write the codes finding the maximum number among 10 numbers entered on keyboard
+    // Use do-while command
+    public static void Question35()
+    {
+        int maxNumber=0,place=0;
+        do
+        {
+            place++;
+            Console.Write($"{place}. sayıyı giriniz: ");
+            int number=int.Parse(Console.ReadLine());
+
+            if(number>maxNumber)
+                maxNumber=number;
+        } while (place<10);
+
+        Console.WriteLine($"Girilen en büyük sayı {maxNumber}");
+    }
     #endregion
 }
