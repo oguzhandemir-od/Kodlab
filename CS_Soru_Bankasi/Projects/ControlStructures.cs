@@ -809,5 +809,24 @@ class ControlStructes
 
         Console.WriteLine($"{equation} = {total}");
     }
+
+    // Write the codes finding how many numbers which fully divisible by 3 and 10 there are between 1-200 
+    // Use do-while command
+    public static void Question37()
+    {
+        int number=0,total=0,counter=0;
+        do
+        {
+            number++;
+            if(number%3==0 && number%10==0)
+                {
+                    total+=number;
+                    counter++;
+                }
+        } while (number<2000);
+
+        Console.WriteLine($"Sayısı: {counter}");
+        Console.WriteLine($"Toplamı: {total}");
+    }
     #endregion
 }
