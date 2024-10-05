@@ -739,5 +739,24 @@ class ControlStructes
 
         } while (number < 10);
     }
+
+    // Write the codes finding how many 3-digits number among 10 numbers entered on keyboard
+    // Use do-while command
+    public static void Question34()
+    {
+        int place=0,counter=0;
+        do
+        {
+            place++;
+            Console.Write($"{place}. sayıyı giriniz: ");
+            int number=int.Parse(Console.ReadLine());
+
+            if((number>=-999 && number <=-100) || (number>=100 && number <=999))
+                counter++;
+
+        } while (place<10);
+
+        Console.WriteLine($"{counter} tane 3 basamaklı sayı vardır.");
+    }
     #endregion
 }
