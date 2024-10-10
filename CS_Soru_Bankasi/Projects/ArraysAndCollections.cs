@@ -88,5 +88,25 @@ class ArraysAndCollections
             Console.WriteLine($"{i+1}. kişinin adı: {names[i]}");
         }
     }
+
+    // Write the codes finding that how many numbers whose last digit is 0 there are among the numbers entered from the keyboard
+    // Use arrays
+    public static void Question4()
+    {
+        int counter=0;
+        int[] numbers=new int[5];
+
+        for(int i=0; i<5;i++)
+        {
+            Console.Write($"{i+1}. sayıyı giriniz: ");
+            numbers[i]=int.Parse(Console.ReadLine());
+            if(numbers[i]%10==0)
+            {
+                counter++;
+            }
+        }
+
+        Console.WriteLine($"Sonu 0 (sıfır) olan toplam {counter} adet sayı vardır.");
+    }
     #endregion
 }
