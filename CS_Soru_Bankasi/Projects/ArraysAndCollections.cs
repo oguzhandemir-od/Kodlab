@@ -108,5 +108,33 @@ class ArraysAndCollections
 
         Console.WriteLine($"Sonu 0 (sıfır) olan toplam {counter} adet sayı vardır.");
     }
+
+    // The elements of a 10-elements array are assigned by computer between 1-1000 randomly.
+    // Write the codes calculating of sum of the numbers between 500-600 in this array
+    // And finding that how many numbers between 100-500 there are in this array.
+    // Use arrays
+    public static void Question5()
+    {
+        int[] numbers=new int[10];
+
+        int total=0;
+        int counter=0;
+
+        Random rnd=new Random();
+
+        for(int i=0;i<10;i++)
+        {
+            numbers[i]=rnd.Next(1,1001);
+
+            if(numbers[i]>=500 && numbers[i]<=600)
+                total+=numbers[i];
+            
+            if(numbers[i]>=100 && numbers[i]<500)
+                counter++;
+        }
+
+        Console.WriteLine($"500-600 arasındaki sayıların toplamı: {total}");
+        Console.WriteLine($"100-500 arasındaki sayıların sayısı: {counter}");
+    }
     #endregion
 }
