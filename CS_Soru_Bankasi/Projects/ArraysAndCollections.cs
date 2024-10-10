@@ -136,5 +136,56 @@ class ArraysAndCollections
         Console.WriteLine($"500-600 arasındaki sayıların toplamı: {total}");
         Console.WriteLine($"100-500 arasındaki sayıların sayısı: {counter}");
     }
+
+    // Make a lotto game codes
+    public static void Question6()
+    {int temp, column;
+        Random rnd = new Random();
+        int[] numbers = new int[6];
+
+        Console.Write("Kaç kolon oynamak istersiniz?: ");
+        column = int.Parse(Console.ReadLine());
+
+        if (column > 0 && column <= 8)
+        {
+            for(int i=1;i<=column;i++)
+            {
+                for(int j=0;j<6;j++)
+                {
+                    numbers[j]=rnd.Next(1,50);
+                    
+                    if(j>0)
+                    {
+                        for(int s=0;s<j;s++)
+                        {
+                            if(numbers[j]==numbers[s])
+                        {
+                            j--;
+                        }
+                        }
+                    }
+                    for(int k=0;k<6;k++)
+                    {
+                                              
+                        if(numbers[j]<numbers[k])
+                        {
+                            temp=numbers[j];
+                            numbers[j]=numbers[k];
+                            numbers[k]=temp;
+                        }
+                    }
+                }
+                Console.WriteLine($"{i}. kolon");
+                for(int k=0;k<6;k++)
+                {
+                    Console.Write($"{numbers[k]}  ");
+                }
+                Console.WriteLine();
+            }
+        }
+        else
+        {
+            Console.WriteLine("En az 1, en fazla 8 kolon oynayabilirsiniz.");
+        }}
     #endregion
 }
