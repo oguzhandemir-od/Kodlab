@@ -188,4 +188,72 @@ class ArraysAndCollections
             Console.WriteLine("En az 1, en fazla 8 kolon oynayabilirsiniz.");
         }}
     #endregion
+
+    #region Arrays - Multi Dimensional Arrays
+    // 3x3 matrices as A and B are entered from the keyboard.
+    // Write the codes finding whether the A and B matrices are equal to each other
+    public static void Question7()
+    {
+        int[,] matrixA=new int[3,3];
+        int[,] matrixB=new int[3,3];
+        bool s=true;
+
+        for(int i=0;i<3;i++)
+        {
+            for(int j=0;j<3;j++)
+            {
+                Console.Write($"A[{i+1},{j+1}]=");
+                matrixA[i,j]=int.Parse(Console.ReadLine());
+            }
+        }
+
+        for(int i=0;i<3;i++)
+        {
+            for(int j=0;j<3;j++)
+            {
+                Console.Write($"B[{i+1},{j+1}]=");
+                matrixB[i,j]=int.Parse(Console.ReadLine());
+            }
+        }
+        Console.WriteLine();
+        Console.WriteLine("*** A Matrisi ***");
+        for(int i=0;i<3;i++)
+        {
+            for(int j=0;j<3;j++)
+            {
+                Console.Write($"{matrixA[i,j]}  ");
+            }
+            Console.WriteLine();
+        }
+        Console.WriteLine();
+        Console.WriteLine("*** B Matrisi ***");
+        for(int i=0;i<3;i++)
+        {
+            for(int j=0;j<3;j++)
+            {
+                Console.Write($"{matrixB[i,j]}  ");
+            }
+            Console.WriteLine();
+        }
+
+        for(int i=0;i<3;i++)
+        {
+            for(int j=0;j<3;j++)
+            {
+                if(matrixA[i,j]!=matrixB[i,j])
+                {
+                    Console.WriteLine("A ve B matrisleri eşit değildir.");
+                    s=false;
+                    break;
+                }                
+            }
+        }
+        if(s==true)
+        {
+            Console.WriteLine("Matrisler birbirine eşittir.");
+        }
+    }
+
+
+    #endregion
 }
