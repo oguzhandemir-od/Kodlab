@@ -1,8 +1,9 @@
 class ArraysAndCollections
 {
+    
+    #region Arrays - One-Dimensional Arrays
     // Write the codes finding the maximum number among 17 numbers entered on keyboard
     // Use arrays
-    #region Arrays - One-Dimensional Arrays
     public static void Question1()
     {
         int[] numbers=new int[17];
@@ -50,6 +51,41 @@ class ArraysAndCollections
         for(int i=0;i<5;i++)
         {
             Console.WriteLine($"{i+1}. sayı: {numbers[i]}");
+        }
+    }
+
+    // Write the codes sorting 5 names entered from the keyboard in alphebetical order
+    // Use arrays
+    public static void Question3()
+    {
+        string[] names=new string[5];
+
+        for(int i=0; i<5;i++)
+        {
+            Console.Write($"{i+1}. kişinin adını giriniz: ");
+            names[i] = Console.ReadLine();
+        }
+
+        string temp;
+
+        for(int i=0; i<5;i++)
+        {
+            for(int j=i+1; j<5;j++)
+            {
+                if(string.Compare(names[i], names[j])>0)
+                {
+                    temp=names[i];
+                    names[i]=names[j];
+                    names[j]=temp;
+                }
+            }
+        }
+
+        Console.WriteLine("Alfabetik Sıralama");
+
+        for(int i=0; i<5;i++)
+        {
+            Console.WriteLine($"{i+1}. kişinin adı: {names[i]}");
         }
     }
     #endregion
