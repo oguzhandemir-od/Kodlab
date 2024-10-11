@@ -316,5 +316,35 @@ class ArraysAndCollections
             Console.WriteLine();
         }
     }
+
+    // Write the codes generating nxn unit matrix
+    public static void Question9()
+    {
+        Console.Write("Oluşturulacak birim matrisin boyutunu giriniz: ");
+        int dimension=int.Parse(Console.ReadLine());
+        int[,] matrix=new int[dimension, dimension];
+
+        Console.WriteLine($"Birim Matris {dimension}x{dimension}");
+
+        for(int i=0; i<dimension; i++)
+        {
+            for(int j=0;j<dimension;j++)
+            {
+                if(i==j)
+                    matrix[i,j]=1;
+                else
+                    matrix[i,j]=0;
+            }
+        }
+
+        for(int i=0; i<dimension; i++)
+        {
+            for(int j=0;j<dimension;j++)
+            {
+                Console.Write($"{matrix[i,j]}  ");
+            }
+            Console.WriteLine();
+        }
+    }
     #endregion
 }
