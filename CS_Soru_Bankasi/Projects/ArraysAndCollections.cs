@@ -254,6 +254,67 @@ class ArraysAndCollections
         }
     }
 
+    // 3x3 matrices as A and B are entered from the keyboard.
+    // Write the codes calculating the matrix C which is the sum of matrices A and B
+    public static void Question8()
+    {
+        int[,] matrixA=new int[3,3];
+        int[,] matrixB=new int[3,3];
+        int[,] matrixC=new int[3,3];
 
+        for(int i=0;i<3;i++)
+        {
+            for(int j=0;j<3;j++)
+            {
+                Console.Write($"A[{i+1},{j+1}]=");
+                matrixA[i,j]=int.Parse(Console.ReadLine());
+            }
+        }
+
+        for(int i=0;i<3;i++)
+        {
+            for(int j=0;j<3;j++)
+            {
+                Console.Write($"B[{i+1},{j+1}]=");
+                matrixB[i,j]=int.Parse(Console.ReadLine());
+            }
+        }
+
+        for(int i=0;i<3;i++)
+        {
+            for(int j=0;j<3;j++)
+            {
+                matrixC[i,j]=matrixA[i,j]+matrixB[i,j];
+            }
+        }
+
+        Console.WriteLine("*** A Matrisi ***");
+        for(int i=0;i<3;i++)
+        {
+            for(int j=0;j<3;j++)
+            {
+                Console.Write($"{matrixA[i,j]}  ");
+            }
+            Console.WriteLine();
+        }
+        Console.WriteLine("*** B Matrisi ***");
+        for(int i=0;i<3;i++)
+        {
+            for(int j=0;j<3;j++)
+            {
+                Console.Write($"{matrixB[i,j]}  ");
+            }
+            Console.WriteLine();
+        }
+        Console.WriteLine("*** Toplam Matrisi ***");
+        for(int i=0;i<3;i++)
+        {
+            for(int j=0;j<3;j++)
+            {
+                Console.Write($"{matrixC[i,j]}  ");
+            }
+            Console.WriteLine();
+        }
+    }
     #endregion
 }
