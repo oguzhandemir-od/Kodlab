@@ -347,4 +347,44 @@ class ArraysAndCollections
         }
     }
     #endregion
+
+    #region Arrays - Unordered Arrays
+    // Write the codes that type an unordered list after its values entered
+    public static void Question10()
+    {
+        int[][] unorderedArray = new int[4][];
+        unorderedArray[0] = new int[5];
+        unorderedArray[1] = new int[2];
+        unorderedArray[2] = new int[3];
+        unorderedArray[3] = new int[6];
+        unorderedArray[0][3] = 15;
+        unorderedArray[1][1] = 12;
+        unorderedArray[2][1] = 9;
+        unorderedArray[2][2] = 99;
+        unorderedArray[3][0] = 10;
+        unorderedArray[3][1] = 11;
+        unorderedArray[3][2] = 12;
+        unorderedArray[3][3] = 13;
+        unorderedArray[3][4] = 14;
+
+        for (int i = 0; i < 5; i++)
+        {
+            Console.Write($"{unorderedArray[0][i]}  ");
+        }
+        Console.WriteLine();
+        for (int j = 0; j < 2; j++)
+        {
+            Console.Write($"{unorderedArray[1][j]}  ");
+        }
+        Console.WriteLine();
+        for (int k = 0; k < 3; k++)
+        {
+            Console.Write($"{unorderedArray[2][k]}  ");
+        }
+        Console.WriteLine();
+        for (int m = 0; m < 6; m++)
+        {
+            Console.Write($"{unorderedArray[3][m]}  ");
+        }
+    }
 }
